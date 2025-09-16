@@ -181,22 +181,25 @@ input[type="text"], input[type="tel"] {
   color: #ff7a00;
 }
 
-.rct-section, .smiles-section {
+.rct-section {
   padding: 3rem 1rem;
   text-align: center;
   background-color: #fff;
 }
 
-.rct-section h2, .smiles-section h2 {
+.rct-section h2 {
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.subtitle {
+.rct-section .subtitle {
   color: #555;
   font-size: 1rem;
   margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rct-cards {
@@ -204,6 +207,7 @@ input[type="text"], input[type="tel"] {
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
+  align-items: stretch; /* ensures both cards have same height */
 }
 
 .rct-card {
@@ -214,12 +218,14 @@ input[type="text"], input[type="tel"] {
   width: 480px;
   overflow: hidden;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  flex-direction: column;
+  justify-content: stretch; /* equal height for text */
 }
 
 .rct-card img {
-  width: 200px;
+  width: 100%;
   height: 300px;
-  object-fit: contain;
+  object-fit: cover; /* keeps image proportions */
   background-color: #f5f2ee;
   padding: 1rem;
 }
@@ -227,7 +233,10 @@ input[type="text"], input[type="tel"] {
 .rct-text {
   padding: 1.5rem;
   text-align: left;
-  flex: 1;
+  flex: 1; /* make text fill equal height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* keeps button at bottom */
 }
 
 .rct-text h3 {
@@ -266,6 +275,17 @@ input[type="text"], input[type="tel"] {
   font-weight: bold;
   cursor: pointer;
   font-size: 0.95rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .rct-cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .rct-card img {
+    height: auto;
+  }
 }
 
 
