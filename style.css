@@ -676,14 +676,14 @@ hr {
   .text-box {
     max-width: 500px;
   }
-  .rct-card {
+   .rct-cards {
     flex-direction: column;
-    width: 100%;
+    gap: 1.5rem;
   }
   .rct-card img {
-    width: 100%;
     height: auto;
   }
+}
   .footer-top {
     flex-direction: column;
     align-items: flex-start;
