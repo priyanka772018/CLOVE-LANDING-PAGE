@@ -1,4 +1,16 @@
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;   
+}
+
+
+.container {
+  max-width: 1200px;    
+  margin: 0 auto;       
+  padding: 0 1rem;      
+  width: 100%;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -580,43 +592,151 @@ hr {
   color: rgba(255, 255, 255, 0.8);
 }
 
-
+/* Tablets */
 @media (max-width: 1024px) {
-  .doctor-image { right: 0; }
-  .doctor-image img { width: 80%; }
-  .why-content { flex-direction: column; }
-}
-
-@media (max-width: 768px) {
-  header { flex-direction: column; align-items: center; }
-  .hero { flex: 0 0 100%; padding: 1rem; }
-  .doctor-image { position: relative; transform: none; height: auto; }
-  .doctor-image img { width: 100%; }
-  form { flex: 0 0 100%; margin: 2rem 1rem; }
-  .rct-cards { flex-direction: column; }
-  .footer-links { flex-direction: column; gap: 6px; }
-}
-
-@media (max-width: 576px) {
-   .smile-grid {
-    grid-template-columns: 1fr 1fr;  
-    gap: 10px;                      
-  }
-  
-  .smile-card {
+  .hero, form {
+    flex: 0 0 100%;
     max-width: 100%;
-    padding: 6px;                 
+  }
+  .doctor-image {
+    position: relative;
+    margin: 0 auto;
+    transform: none;
+    display: flex;
+    justify-content: center;
+  }
+  .doctor-image img {
+    width: 80%;
+    height: auto;
+  }
+  .why-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-section, .img-section {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* Small tablets & large phones */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .hero {
+    flex: 0 0 100%;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .doctor-image {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .doctor-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  form {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 1.5rem;
+  }
+
+  .rct-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero {
+    padding: 1rem;
+  }
+
+  .text-box {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .smile-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .smile-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 6px;
   }
 
   .smile-card img {
-    height: 140px;                  
+    height: 120px;
   }
 
-  .smile-card .name {
-    font-size: 0.9rem;
+  .patients {
+    gap: 1rem;
+    justify-content: space-around;
   }
 
-  .smile-card .city {
-    font-size: 0.8rem;
+  .patient {
+    width: 45%;
+  }
+
+  .patient img {
+    height: 140px;
+  }
+
+  .appointment-form {
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
   }
 }
