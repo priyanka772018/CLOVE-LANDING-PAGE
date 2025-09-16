@@ -11,40 +11,33 @@ body {
   line-height: 1.6;
 }
 
+
 header {
   background: rgb(255, 250, 245);
   display: flex;
-  color: black;
-  justify-content: space-between;
   align-items: center;
+  justify-content: flex-start; 
   padding: 1rem 2rem;
   border-bottom: 1px solid #ccc;
+  gap: 2rem;
 }
 
-.header-orange {
-  font-size: 1.8rem;
-  color: #ff7a00;
-  margin-bottom: 0;
+.logo {
+  display: flex;
+  align-items: center;
 }
 
-.header-smile {
-  font-size: 1.8rem;
-  color: rgb(70, 37, 18);
-}
-
-.header-subtext {
-  font-size: 1rem;
-  letter-spacing: 0;
-  font-weight: 500;
-  margin-top: -10px;
-  margin-left: 5px;
-  color: rgb(70, 37, 18);
+.logo img {
+  height: 54px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .leftydiv {
+  margin-left: auto; 
   display: flex;
   gap: 10px;
-  justify-content: center;
   align-items: center;
 }
 
@@ -79,7 +72,7 @@ header {
   align-items: center;
 }
 
-/* HERO SECTION */
+
 .hero-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -96,7 +89,7 @@ header {
   overflow: hidden;
 }
 
-/* Background blur */
+
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -107,10 +100,10 @@ header {
   z-index: 0;
 }
 
-/* Text box */
+
 .text-box {
   position: relative;
-  z-index: 1; /* doctor image ke neeche */
+  z-index: 1; 
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(5px);
   padding: 2rem;
@@ -118,7 +111,7 @@ header {
   max-width: 700px;
 }
 
-/* Doctor Image */
+
 .doctor-image {
   position: absolute;
   right: 2rem;
@@ -126,7 +119,7 @@ header {
   height: 100%;
   display: flex;
   align-items: flex-end;
-  z-index: 2; /* text box ke upar */
+  z-index: 2; 
   transform: scaleX(-1);
 }
 
@@ -135,7 +128,7 @@ header {
   object-fit: contain;
 }
 
-/* FORM */
+
 form {
   flex: 0 0 30%;
   padding: 2rem;
@@ -154,7 +147,6 @@ input[type="text"], input[type="tel"] {
   border-radius: 5px;
 }
 
-/* STATS SECTION */
 .stats-section {
   display: flex;
   justify-content: space-around;
@@ -189,7 +181,6 @@ input[type="text"], input[type="tel"] {
   color: #ff7a00;
 }
 
-/* RCT + SMILES SECTIONS */
 .rct-section, .smiles-section {
   padding: 3rem 1rem;
   text-align: center;
@@ -277,7 +268,7 @@ input[type="text"], input[type="tel"] {
   font-size: 0.95rem;
 }
 
-/* SMILES */
+
 .smile-grid {
   display: flex;
   justify-content: center;
@@ -307,7 +298,6 @@ input[type="text"], input[type="tel"] {
   margin-top: 0.2rem;
 }
 
-/* WHY CLOVER */
 .why-clove {
   background-color: #f7f9fb;
   padding: 3rem 1rem;
@@ -378,7 +368,7 @@ input[type="text"], input[type="tel"] {
   font-weight: bold;
 }
 
-/* PATIENTS */
+
 .patient-section {
   text-align: center;
   padding: 3rem 1rem;
@@ -451,7 +441,7 @@ input[type="text"], input[type="tel"] {
   white-space: nowrap;
 }
 
-/* APPOINTMENT FORM */
+
 .appointment-form {
   background-color: #fff5ec;
   padding: 2rem;
@@ -552,7 +542,6 @@ input[type="text"], input[type="tel"] {
   text-decoration: underline;
 }
 
-/* FOOTER */
 .footer {
   background-color: #3b1d0f;
   color: #fff;
@@ -565,20 +554,19 @@ input[type="text"], input[type="tel"] {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .footer-logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.logo-orange {
-  color: #ff7a00;
-}
-
-.logo-smile {
-  color: #fff;
+.footer-logo img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
 }
 
 .footer-subtext {
@@ -621,7 +609,6 @@ hr {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* RESPONSIVE */
 @media screen and (max-width: 1024px) {
   .doctor-image {
     right: 0;
