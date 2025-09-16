@@ -694,7 +694,7 @@ hr {
     align-items: flex-start;
     gap: 0.5rem;
   }
-}
+
 
 @media screen and (max-width: 480px) {
   .btn-white {
