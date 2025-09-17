@@ -786,7 +786,7 @@ hr {
   .rct-card h3,
   .rct-card p,
   .rct-card ul {
-    text-align:center;
+    text-align:left;
   }
 
   .rct-card button,
