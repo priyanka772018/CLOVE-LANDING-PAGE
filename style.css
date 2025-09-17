@@ -152,7 +152,7 @@ form {
 input[type="text"], input[type="tel"] {
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 24px;
 }
 
 
@@ -166,14 +166,14 @@ input[type="text"], input[type="tel"] {
   flex: 1;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 24px;
 }
 
 .captcha-value {
   background: #000;       
   color: #fff;            
   padding: 10px 16px;
-  border-radius: 5px;
+  border-radius : 24px ;
   font-weight: bold;
   font-size: 1rem;
   letter-spacing: 2px;
@@ -508,7 +508,7 @@ input[type="text"], input[type="tel"] {
   flex: 1;
   padding: 10px;
   border: none;
-  border-radius: 8px;
+  border-radius: 24px;
   font-size: 1rem;
 }
 
@@ -532,7 +532,7 @@ input[type="text"], input[type="tel"] {
   background: #000;       
   color: #fff;            
   padding: 10px 16px;
-  border-radius: 8px;
+  border-radius: 24px;
   font-weight: bold;
   font-size: 1rem;
   letter-spacing: 2px;
