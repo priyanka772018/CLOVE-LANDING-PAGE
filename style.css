@@ -74,7 +74,7 @@ header {
 }
 
 .btn-orange {
-  background: #ff6b00;
+  background: #f58420;
   color: white;
 }
 
@@ -211,7 +211,7 @@ input[type="text"], input[type="tel"] {
 }
 
 .stat-box span {
-  color: #ff7a00;
+  color: #f58420;
 }
 
 
@@ -285,7 +285,7 @@ input[type="text"], input[type="tel"] {
 }
 
 .price-label {
-  color: #f57c00;
+  color: #f58420;
   font-weight: bold;
 }
 
@@ -347,7 +347,7 @@ input[type="text"], input[type="tel"] {
 
 .smile-card .city {
   font-size: 0.85rem;
-  color: #f57c00;
+  color: #f58420;
 }
 
 
@@ -410,7 +410,7 @@ input[type="text"], input[type="tel"] {
 }
 
 .plus {
-  color: #ff7a00;
+  color: #f58420;
   font-size: 1.25rem;
   font-weight: bold;
 }
@@ -479,7 +479,7 @@ input[type="text"], input[type="tel"] {
 .treatment {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #ff7a00;
+  color: #f58420;
 }
 
 
